@@ -90,13 +90,14 @@ export const StartCountdownButton = styled.button`
   padding: 1rem;
   border-radius: 8px;
   display: flex;
-  align-center: center;
+  align-items: center;
   justify-content: center;
   gap: 0.5rem;
   font-weight: bold;
   cursor: pointer;
   background: ${(props) => props.theme['green-500']};
   color: ${(props) => props.theme['gray-100']};
+
   &:disabled {
     opacity: 0.7;
     cursor: not-allowed;
