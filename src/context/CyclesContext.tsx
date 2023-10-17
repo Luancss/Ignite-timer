@@ -1,5 +1,6 @@
 import { createContext, ReactNode, useState, useReducer } from "react";
-import {Cycle, actionTypes, cyclesReducer} from '../reducers/cycles'
+import {Cycle, cyclesReducer} from '../reducers/cycles/reducer'
+import { actionTypes, addNewCycleAction, interruptCurrentCycleAction, markCurrentCycleAsFinishedAction } from "../reducers/cycles/actions";
 
 interface CreateCycleData {
   task: string;
@@ -44,12 +45,7 @@ export function CyclesContextProvider({
   }
 
   function markCurrentCycleAsFinished() {
-    dispath({
-      type: actionTypes.MARK_CURRENT_CYCLE_AS_FINISHED,
-      payload: {
-        activeCycleId,
-      },
-    });
+    dispath(markCurrentCycleAsFinishedAction());
   }
 
   function createNewCycle(data: CreateCycleData) {
@@ -62,23 +58,13 @@ export function CyclesContextProvider({
       startDate: new Date(),
     };
 
-    dispath({
-      type: actionTypes.ADD_NEW_CYCLE,
-      payload: {
-        newCycle,
-      },
-    });
+    dispath(addNewCycleAction(newCycle));
 
     setAmountSecondsPassed(0);
   }
 
   function interruptCurrentCycle() {
-    dispath({
-      type: actionTypes.INTERRUPT_CURRENT_CYCLE,
-      payload: {
-        activeCycleId,
-      },
-    });
+    dispath(interruptCurrentCycleAction());
   }
 
   return (
