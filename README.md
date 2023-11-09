@@ -1,46 +1,108 @@
-# Getting Started with Create React App
+<h1 align="center">
+    <img alt="Logo Ignite" title="Logo Ignite" src="./.github/logo-ignite.svg" />
+    Ignite Timer
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+ <a href="#-demonstration">Demonstration</a> |
+ <a href="#-deploy">Deploy</a> |
+ <a href="#-technologies">Technologies</a> |
+ <a href="#-layout">Layout</a> |
+ <a href="#-clipboard-pré-requisitos">Clipboard</a> |
+ <a href="#-settings">Settings</a>
+</p>
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+O Ignite Timer nada mais é que um projeto que permite ao usuário cronometrar as suas tarefas no dia a dia, além de le permite ver um histórico de todos as tarefas já realizadas.
 
-### `npm start`
+**Objetivos**: os principais objetivos desta aplicação foi treinar a atilização das seguintes ferramentas/tecnologias: 
+  - Lidar com datas e horarios através da biblioteca `date-fns`
+  - Utilização de formulários com `React Hook Form`
+  - Aplicação de temas dark e light utilizando o `Styled Components`
+  - Uso do hook `useReducer` do React para centralizar as alterações em um estado complexo
+  - Outros...
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Caso goste do projeto marque a estrelinha⭐ e compartilhe para me ajudar 👍, e me siga para ver outros projetos meus.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📷 Demonstration
+<p align="center">
+  <img alt="Home" src=".github/Home.png" width="100%">
+  <img alt="Histórico de tarefas" src=".github/Histórico.png" width="100%">
+</p>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 💻 Deploy
 
-### `npm run build`
+Clique no link a seguir para executar o projeto na sua máquina: <a target="_blank" href="https://ignite-timer-luancss.vercel.app/">Link</a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Technologies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-### `npm run eject`
+✔ [Vite](https://vitejs.dev/)
+<br/>
+✔ [ReactJS](https://reactjs.org/)
+<br/>
+✔ [TypeScript](https://www.typescriptlang.org/)
+<br/>
+✔ [Styled Components](https://styled-components.com/docs)
+<br/>
+✔ [Phosphor Icons](https://phosphoricons.com/)
+<br/>
+✔ [date-fns](https://date-fns.org/docs/Getting-Started)
+<br/>
+✔ [React Hook Form](https://react-hook-form.com/)
+<br/>
+✔ [Zod](https://github.com/colinhacks/zod)
+<br/>
+✔ [React Router](https://reactrouter.com/en/v6.3.0/getting-started/overview)
+<br/>
+✔ [Immer](https://github.com/immerjs/immer)
+<br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🎨 Layout
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/nCeslCY32mG7newtwTpuks/Ignite-Timer-(Community)?node-id=11%3A599). É necessário ter conta no [Figma](https://www.figma.com/) para acessá-lo.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## 📋 Clipboard (Pré-requisitos)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Antes de baixar o projeto você vai precisar ter instalado na sua máquina as seguintes ferramentas:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* [Git](https://git-scm.com)
+* [NodeJS](https://nodejs.org/en/)
+* [Yarn](https://yarnpkg.com/) ou [NPM](https://www.npmjs.com/)
+
+
+## ⚙ Settings
+
+Segue os comandos para baixar e executar o projeto na sua máquina:
+
+* `git clone` + `URL do Projeto`: clonar este repositório.
+* `cd Ignite-Timer`: acessa a pasta do projeto no terminal.
+* `yarn`: para baixar as dependências do projeto.
+* `yarn dev`: 
+    - Executa o projeto em modo/ambiente de desenvolvimento.
+    - Abra [http://localhost:3000](http://localhost:3000) para ver o projeto rodando no Navegador.
+    - A página será recarregada se você fizer edições no código, e se tiver algum erro será mostrado no console.
+* `yarn build`: 
+    - Compila a aplicação para a produção na pasta `build`.
+
+
+## ✍ Author
+
+<img alt="Luancss" title="Luancss" src="https://avatars.githubusercontent.com/u/104950187?v=4" width="100">
+<p>
+    Made with 💜 by Luancss
+</p>
+<p align="left">
+    <a href="https://www.linkedin.com/in/luan-carlos-30035b246/" target="_blank">
+        <img align="center" src="https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin Luan Carlos" />
+    </a>
+    <a href="mailto:luancss.contact@gmail.com" target="_blank">
+        <img align="center" src="https://img.shields.io/badge/Gmail-FF0000?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail Luan Carlos" />
+    </a>
+</p>
